@@ -5,12 +5,22 @@ import Work from "./components/work/Work";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import "./app.scss"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Menu from "./components/menu/Menu";
+
 
 function App() {
 
   const [menuOpen, setMenuOpen] = useState(false);
+
+  document.addEventListener(
+    'scroll',
+    (event) => {
+        // handle scroll event
+        console.log("hello");
+    }, 
+    { passive: true }
+);
 
   return (
     <div className="app">
@@ -20,7 +30,7 @@ function App() {
           <Intro />
           <Portfolio />
           <Work />
-          <Testimonials />
+          {/* <Testimonials /> */}
           <Contact />
         </div>
     </div>

@@ -1,7 +1,8 @@
 @import "../../global.scss";
 
 .works {
-    background-color: crimson;
+    background: url("https://assets.weforum.org/article/image/0R7BdnZl_gyeWOKsudAVmI7gNR673V4BIxQM6gwT-FY.png") no-repeat center center fixed;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,6 +10,7 @@
 
     .arrow{
         height: 60px;
+        
         position: absolute;
         cursor: pointer;
 

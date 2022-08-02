@@ -38,7 +38,7 @@ function Testimonials() {
 
     return (
         <div className="testimonials" id="testimonials">
-            <h1>Testimonials</h1>
+            <h1>About me</h1>
             <div className="container">
                 {data.map(d=>(
                 <div className={d.featured ? "card featured" : "card"}>

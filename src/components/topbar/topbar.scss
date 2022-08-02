@@ -45,6 +45,10 @@
         span {
           font-size: 15px;
           font-weight: 500;
+
+          a:link {
+            text-decoration: none;
+          }
         }
       }
     }
@@ -53,6 +57,7 @@
       .hamburger {
         width: 32px;
         height: 25px;
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -76,7 +81,7 @@
     .hamburger {
       span {
         &:first-child {
-          background-color: white;
+          background-color: red;
           transform: rotate(45deg);
         }
         &:nth-child(2) {
